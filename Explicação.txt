@@ -1,0 +1,20 @@
+1 - Criando uma função com o nome cadastroDeUsuario. Essa função será chamada ao clicar no botão de cadastro.
+2 - Cria uma variavel constante chamada "nome" que armazena o id "nome" que está presente no documento HTML, a função usada para pegar o id é document.getElementById('nome').
+3 - Cria uma variavel constante chamada "email" que armazena o id "email" que está presente no documento HTML, a função usada para pegar o id é document.getElementById('email').
+
+5 - Verifica se os input referenciados com a variavel "nome" e "email" estão vazios. Para saber se estão vazio, é usado o operador === junto de '' (string vazia) que é usado para fazer uma comparação. Também contém o operador || (ou), que é usado para saber se "nome" OU "email" estão vazios.
+6 - Se algum dos dois estiver vazio, a função é impedida de ser finalizada e também finaliza a execução com a tag "return". No site, caso algum dos input esteja vazio, nenhuma informação será enviada para a tabela.
+7 - Fecha o bloco de if.
+
+9 - Cria uma variavel constante chamada "tabela" que armazena o id "tabela" que está presente no documento HTML, a função usada para pegar o id é document.getElementById('tabela'). Além do id "tabela", também é armazenado a primeira tag <tbody> que está presente no documento HTML, para pegar a primeira tag, é usada a função getElementsByTagName('tbody')[0].
+10 - A função insertRow(0) insere uma nova linha na posição 0 (topo) do <tbody>. A nova linha é armazenada na variavel constante novaLinha.
+
+12 - A função insertCell(0) insere uma célula na posição 0 (primeiro) da linha (novaLinha). A nova célula é armazenada na variavel constante celulaNome.
+13 - A função insertCell(1) insere uma célula na posição 1 (segundo) da linha (novaLinha). A nova célula é armazenada na variavel constante celulaEmail.
+
+15 - A propriedade textContent define o texto da célula como o valor do nome.
+16 - A propriedade textContent define o texto da célula como o valor do email.
+
+18 - Quando toda função rodar, os input são limpados definindo valor do id "nome" como uma string vazia '', limpando o input do nome.
+19 - Quando toda função rodar, os input são limpados definindo valor do id "email" como uma string vazia '', limpando o input do email.
+20 - Caso tudo ocorra corretamente, o código para de executar aqui, fechando a função. Se a função finalizar corretamente, as informações serão enviadas para a tabela.
